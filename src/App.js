@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './App.css'
+import Likes from './Likes'
+import Comments from './Comments'
+import Title from './Title'
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+  return (
+    <div className='App'>
+   
+      <div className='wrap'>
+        <div className='card'>
+          <div className='card-image'>
+            <img src='https://startbootstrap.github.io/startbootstrap-agency/assets/img/portfolio/2.jpg'/>
+            <Title/>
+            <Likes />
+          </div>
+          <Comments/>
+        </div>
+      </div>
+    </div>
+    )
+  }
+  
+  
+export default App
