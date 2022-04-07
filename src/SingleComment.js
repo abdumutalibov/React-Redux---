@@ -7,7 +7,7 @@ function SingleComment({ data }) {
 const dispatch = useDispatch()
 const handleUpdate=(e)=>{
     e.preventDefault();
-    console.log('submit =>', commentText);
+    // console.log('submit =>', commentText);
     dispatch(commentUpdate(commentText, id))
 }
 
